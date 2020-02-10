@@ -1,0 +1,58 @@
+﻿@model Appointment.Models.AppointmentModel
+
+@{
+    ViewBag.Title = "ShowAppointmentDetails";
+}
+
+<h2>ShowAppointmentDetails</h2>
+
+<div>
+    <h4>AppointmentModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.patientName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.patientName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.appointmentDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.appointmentDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.patientNetworth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.patientNetworth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.doctorLastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.doctorLastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.currentPainLevel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.currentPainLevel)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
